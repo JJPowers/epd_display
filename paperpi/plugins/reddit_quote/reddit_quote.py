@@ -74,6 +74,7 @@ def _fetch_quotes():
 
 
 def _process_quotes(raw_quotes):
+    global text
     processed_quotes = []
     logging.debug(f'processing {len(raw_quotes)} quotes')
     for quote in raw_quotes:
